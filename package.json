@@ -9,6 +9,6 @@
         "plates":"0.4.6"
     },
     "devDependencies": {
-        "coffescript":"1.1.3"
+        "coffeescript":"1.1.3"
     }
 }

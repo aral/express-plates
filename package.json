@@ -4,7 +4,7 @@
     "version":"0.1.4",
     "author":"Arnaud Rinquin <rinquin.arnaud@gmail.com>, Aral Balkan <aral@aralbalkan.com>",
     "main":"./express-plates.js",
-    "repository": "git://github.com/ArnaudRinquin/express-plates.git",
+    "repository": "git://github.com/aral/express-plates.git",
     "dependencies": {
         "plates":"0.4.8"
     },

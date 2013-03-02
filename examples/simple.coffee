@@ -1,8 +1,8 @@
 express = require 'express'
-app = express.createServer()
-plates = require('express-plate').init()
+app = express()
+plates = require('express-plates').init(app)
 
-app.set 'view engine', 'html'
+# app.set 'view engine', 'html'
 app.set 'views', __dirname + '/views'
 
 app.get '/', (req, res) ->
@@ -20,4 +20,4 @@ app.get '/', (req, res) ->
         map: map
 
 
-app.listen(8080);
+app.listen(3000);

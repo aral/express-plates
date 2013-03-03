@@ -2,37 +2,34 @@
 <html lang='en'>
     <head>
         <meta charset='utf-8'>
-        <title>Simple Express-Plates example</title>
-        <style type="text/css">
-            [data-name='stripes'] {
-                max-width:250px;
-            }
-        </style>
+        <!-- Note: Bug in plates: If title tag already has text content it is not
+             ===== replaced regardless of whether you use .to(), .insert(), or .use() -->
+        <title></title>
+        <style type='text/css'>[data-content='photo'] { max-width:250px; }</style>
     </head>
     <body>
         <h1 id='title'>Default title</h1>
-        <div>
-            Hello <span data-content="name">you</span>!
-        </div>
-        <div class="a-different-class">Oups... it does not work as expected.</div>
+        <p>Hello from <span data-content="name">name</span>!<p>
+
+        <p class="target">This paragraph is a placeholder.</p>
 
         <p><a href='/'>This should link to Aral’s homepage.</a></p>
 
-        <p><a href='http://aralbalkan.com/scribbles/on-false-dichotomies-and-diversity/'>This should link to my On false dichotomies and diversity article.</a></p>
+        <p><a href='http://aralbalkan.com'>This should link to the Modern iOS Development workshop.</a></p>
 
-        <p>This should be an image of stripes:</p>
+        <p>This should be Aral’s headshot:</p>
 
-        <img data-name='stripes' src=''>
+        <img data-content='photo' src='http://placehold.it/250x250'>
 
         <h2>Collections</h2>
 
         <ul class='friends-list'>
-            <li class='friends'>
+            <li class='friend'>
                 <p><span class='name'>Name</span> knows <span class='skills'>skills</span>.</p>
             </li>
         </ul>
 
-        <p class='no-friends-warning'>WARNING: THERE ARE NO FRIENDS!!!</p>
+        <p class='no-friends-warning'>WARNING: YOU HAVE NO FRIENDS!!!</p>
 
     </body>
 </html>

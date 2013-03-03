@@ -1,5 +1,5 @@
 {
-    "name":"express-plates-example",
+    "name":"express3-plates-example",
     "description": "Example for express-plates template engine adapter for Express",
     "version":"0.1.4",
     "author":"Arnaud Rinquin <rinquin.arnaud@gmail.com>, Aral Balkan <aral@aralbalkan.com>",

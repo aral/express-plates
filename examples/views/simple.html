@@ -1,12 +1,38 @@
-<html>
+<!doctype html>
+<html lang='en'>
     <head>
+        <meta charset='utf-8'>
         <title>Simple Express-Plates example</title>
+        <style type="text/css">
+            [data-name='stripes'] {
+                max-width:250px;
+            }
+        </style>
     </head>
     <body>
         <h1 id='title'>Default title</h1>
         <div>
-            Hello <span data-content="name">you</span> !
+            Hello <span data-content="name">you</span>!
         </div>
-        <div class="content">Oups... it does not work as expected.</div>
+        <div class="a-different-class">Oups... it does not work as expected.</div>
+
+        <p><a href='/'>This should link to Aral’s homepage.</a></p>
+
+        <p><a href='http://aralbalkan.com/scribbles/on-false-dichotomies-and-diversity/'>This should link to my On false dichotomies and diversity article.</a></p>
+
+        <p>This should be an image of stripes:</p>
+
+        <img data-name='stripes' src=''>
+
+        <h2>Collections</h2>
+
+        <ul class='friends-list'>
+            <li class='friends'>
+                <p><span class='name'>Name</span> knows <span class='skills'>skills</span>.</p>
+            </li>
+        </ul>
+
+        <p class='no-friends-warning'>WARNING: THERE ARE NO FRIENDS!!!</p>
+
     </body>
 </html>

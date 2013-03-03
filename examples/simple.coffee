@@ -59,7 +59,7 @@ app.get '/', (req, res) ->
         data:
             title: 'Express 3‐Plates sample'
             name: 'Express 3‐Plates'
-            content: 'This is a simple example to demonstrate Express 3‐Plates'
+            content: 'This is a simple example to demonstrate Express 3‐Plates.'
             newURL: 'http://aralbalkan.com'
             correctURLFragment: 'moderniosdevelopment'
             aralImageURL: 'http://aralbalkan.com/images/aral.jpg'

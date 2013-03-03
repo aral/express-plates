@@ -1,7 +1,7 @@
 {
     "name":"express3-plates",
-    "description": "Plates template engine adapter for Express 3",
-    "version":"0.1.4",
+    "description": "Plates template engine adapter for Express 3. This is a fork of express-plates with a few bug fixes and an revised example page.",
+    "version":"0.1.5",
     "author":"Arnaud Rinquin <rinquin.arnaud@gmail.com>, Aral Balkan <aral@aralbalkan.com>",
     "main":"./express-plates.js",
     "repository": "git://github.com/aral/express-plates.git",
